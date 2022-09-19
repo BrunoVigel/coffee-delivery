@@ -1,5 +1,5 @@
 import { BuyButtons, BuyContainer, CoffeeListContainer, Item, ItemDescription, ItemList, ItemTags, Title } from "./style";
-// import TestImg from '../../../../Assets/image.png'
+import TestImg from '../../../../Assets/productimg.png'
 import { Minus, Plus, ShoppingCart } from "phosphor-react";
 
 
@@ -9,7 +9,7 @@ export function CoffeeList() {
             <Title>Nossos cafés</Title>
             <ItemList>
                 <Item>
-                    {/* <img src={TestImg} alt="" /> */}
+                    <img src={TestImg} alt="" />
                     <ItemTags>
                         <p>Tradicional</p>
                     </ItemTags>

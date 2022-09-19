@@ -1,5 +1,5 @@
 import { AddressInputs, AddressTitle, CheckoutContainer, CoffeeCardContainer, DeliveryAddressContainer, Divider, Item, ItemButtons, ItemInfo, OrderFormContainer, PaymentButtons, PaymentMethodContainer, PaymentTitle, SubmitButton, TotalItemsInfo } from "./style";
-// import TestImage from '../../Assets/Image.png'
+import TestImage from '../../Assets/productimg.png'
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Minus, Money, Plus, Trash } from "phosphor-react";
 
 export function Checkout() {
@@ -47,7 +47,7 @@ export function Checkout() {
             <CoffeeCardContainer>
                 <Item>
                     <ItemInfo>
-                        {/* <img src={TestImage} alt="" /> */}
+                        <img src={TestImage} alt="" />
                         <div>
                             <p>Expresso Tradicional</p>
                             <ItemButtons>
@@ -67,7 +67,7 @@ export function Checkout() {
                 <Divider></Divider>
                 <Item>
                     <ItemInfo>
-                        {/* <img src={TestImage} alt="" /> */}
+                        <img src={TestImage} alt="" />
                         <div>
                             <p>Expresso Tradicional</p>
                             <ItemButtons>
