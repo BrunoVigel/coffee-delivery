@@ -70,13 +70,56 @@ export const ItemTags = styled.div `
 `
 
 export const BuyContainer = styled.div`
-    padding: 2.0625rem 1.5rem 1.25rem;
+    padding: 2.0625rem 0 1.25rem 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    &>p {
+        font-family: 'Baloo 2';
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: ${(props) => props.theme['base-text']};
+        padding-right: 1.4375rem;
+
+        span {
+            font-family: 'Roboto';
+            font-weight:normal;
+            font-size: 0.875rem;
+        }
+    }
 `
 
 export const BuyButtons = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+        background: ${(props) => props.theme['base-button']};
+        border-radius: 6px;
+        padding: 0.5rem;
+        
+        span {
+            font-size: 1rem;
+        }
+
+        &>button {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &>button {
+        background: ${(props) => props.theme['purple-dark']};
+        padding: 0.5rem;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
 `

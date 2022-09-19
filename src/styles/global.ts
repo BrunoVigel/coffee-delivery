@@ -29,4 +29,9 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: ${(props) => props.theme['base-text']};
   }
+
+  input {
+    background: none;
+    border: none;
+  }
 `
