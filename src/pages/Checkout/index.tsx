@@ -1,6 +1,7 @@
 import { AddressInputs, AddressTitle, CheckoutContainer, CoffeeCardContainer, DeliveryAddressContainer, Divider, Item, ItemButtons, ItemInfo, OrderFormContainer, PaymentButtons, PaymentMethodContainer, PaymentTitle, SubmitButton, TotalItemsInfo } from "./style";
 import TestImage from '../../Assets/productimg.png'
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Minus, Money, Plus, Trash } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 
 export function Checkout() {
     return(
@@ -104,7 +105,9 @@ export function Checkout() {
                     </div>
                 </TotalItemsInfo>
                 <div>
-                    <SubmitButton type="submit">CONFIRMAR PEDIDO</SubmitButton>
+                    <NavLink to="/success">
+                        <SubmitButton type="submit">CONFIRMAR PEDIDO</SubmitButton>
+                    </NavLink>
                 </div>
             </CoffeeCardContainer>
         </CheckoutContainer>
